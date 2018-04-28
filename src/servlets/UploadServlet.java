@@ -28,6 +28,7 @@ public class UploadServlet extends HttpServlet {
         // 把文件写到指定路径
         System.out.println(savePath);
         p.write(savePath +File.separator+ fileName);
+        //p.getInputStream();
         response.setCharacterEncoding("UTF-8");
         PrintWriter writer = response.getWriter();
         writer.print("上传成功");

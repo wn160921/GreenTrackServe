@@ -5,7 +5,7 @@
          version="3.1">
     <servlet>
         <servlet-name>testservlet</servlet-name>
-        <servlet-class>servlets.TestServlet</servlet-class>
+        <servlet-class>servlets.LoginServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>register</servlet-name>
@@ -21,7 +21,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>testservlet</servlet-name>
-        <url-pattern>/abc</url-pattern>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>register</servlet-name>
