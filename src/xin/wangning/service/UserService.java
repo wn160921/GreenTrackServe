@@ -14,13 +14,18 @@ public class UserService {
         return userDao.findAll();
     }
 
-    public String findById(String id){
+    public User findById(String id){
         User user = userDao.findById(id);
         if(user==null){
-            return "找不到用户";
+            return null;
         }else {
-            return JSON.toJSONString(user);
+            return user;
         }
+    }
+
+    public User findByUserName(String username){
+        User user = userDao.findByUsername(username);
+        return user;
     }
 
     public void updateRewardPoints(String id,int up){
